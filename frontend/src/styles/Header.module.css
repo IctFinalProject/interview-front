@@ -1,0 +1,63 @@
+.header {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  justify-content: center !important; /* Navbar.Collapse 중앙 정렬 */
+}
+
+.navLink {
+  margin: 0 15px; /* 간격을 15px로 조정 */
+}
+
+.username {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.loginButton,
+.logoutButton,
+.signupButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginButton:hover,
+.logoutButton:hover,
+.signupButton:hover {
+  background-color: #e2e6ea;
+}
+
+.signupButton {
+  background-color: black;
+  color: white;
+}
+
+/* 드롭다운 메뉴에 대한 스타일 추가 */
+.dropdown-menu {
+  transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* 드롭다운 메뉴의 위치를 조정 */
+  opacity: 1; /* 부드럽게 나타남 */
+}
+
+.dropdown-menu {
+  display: none; /* 기본적으로 숨김 */
+  opacity: 0; /* 부드럽게 사라짐 */
+}

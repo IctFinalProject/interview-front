@@ -1,0 +1,52 @@
+.footer {
+  padding: 20px 0;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section {
+  text-align: left;
+  margin: 10px;
+}
+
+.section h4 {
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin: 5px 0;
+}
+
+.section ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
