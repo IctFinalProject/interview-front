@@ -1,6 +1,9 @@
+/* Header.module.css */
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  background-color: #fff;
   border-bottom: 1px solid #ddd;
 }
 
@@ -9,55 +12,64 @@
   font-weight: bold;
 }
 
-.navbar-collapse {
-  justify-content: center !important; /* Navbar.Collapse 중앙 정렬 */
+.navLinks {
+  display: flex;
 }
 
 .navLink {
-  margin: 0 15px; /* 간격을 15px로 조정 */
+  margin: 0 15px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
 }
 
-.username {
+.userMenu {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
   margin-right: 10px;
   font-size: 16px;
-  font-weight: bold;
 }
 
-.loginButton,
-.logoutButton,
-.signupButton {
+.notificationButton, .loginButton, .signupButton {
   margin-left: 10px;
-  padding: 5px 10px;
-  font-size: 14px;
+  padding: 5px 15px;
   border: 1px solid #ddd;
-  background-color: #f8f9fa;
-  border-radius: 5px;
+  background-color: #fff;
   cursor: pointer;
+  font-size: 14px;
+  text-align: center;
 }
 
-.loginButton:hover,
-.logoutButton:hover,
-.signupButton:hover {
-  background-color: #e2e6ea;
+.notificationButton {
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+}
+
+.loginButton, .signupButton {
+  background-color: #fff;
 }
 
 .signupButton {
-  background-color: black;
-  color: white;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
 }
 
-/* 드롭다운 메뉴에 대한 스타일 추가 */
-.dropdown-menu {
-  transition: opacity 0.3s ease;
+.subMenu {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0; /* 드롭다운 메뉴의 위치를 조정 */
-  opacity: 1; /* 부드럽게 나타남 */
-}
-
-.dropdown-menu {
-  display: none; /* 기본적으로 숨김 */
-  opacity: 0; /* 부드럽게 사라짐 */
+.subMenuLink {
+  margin: 0 15px;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
 }
