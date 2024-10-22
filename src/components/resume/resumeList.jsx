@@ -31,7 +31,7 @@ const ResumeList = () => {
   const { userStore, authStore } = useStores();
   const accordionRefs = useRef([]); // 아코디언을 참조하기 위한 배열
 
-  useEffect(() => {
+  /* useEffect(() => {
     if (!authStore) {
       console.error('authStore is undefined');
       return;
@@ -45,7 +45,8 @@ const ResumeList = () => {
       router.push('/');
     }
   }, [authStore, router]);
-  
+   */
+
   useEffect(() => {
     document.body.style.overflowY = 'scroll';
     return () => {

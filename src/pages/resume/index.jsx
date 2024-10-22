@@ -436,6 +436,9 @@ const ModalContent = styled('div')(
             fieldHasError = true;
         }
 
+        //6.희망 근무조건 섹션 유효성 검사
+
+
         // 첫 번째 오류 필드로 스크롤 이동 설정
         if (fieldHasError && !hasError) {
             firstErrorField = () => sectionsRef.education.current.scrollIntoView({ behavior: 'smooth' });
